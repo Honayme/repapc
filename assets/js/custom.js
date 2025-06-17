@@ -112,3 +112,130 @@ if (ele?.length) {
         ele[i].innerHTML = fullyear;
     }
 }
+
+
+// Testimonial Slider
+var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.testimonial-swiper-button-next',
+        prevEl: '.testimonial-swiper-button-prev',
+    },
+});
+
+// Service Page - Partner Slider
+var partnerSwiper = new Swiper('.industry-slider', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    speed: 2500,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.7,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        1000: {
+            slidesPerView: 5,
+        },
+        1600: {
+            slidesPerView: 7,
+        },
+    },
+});
+
+// Counter Js
+VanillaCounter();
+
+// Accordion
+const acc = new Accordion('.accordion-container');
+acc.open(0);
+
+document.addEventListener('DOMContentLoaded', function() {
+    tsParticles.load("tsparticles", {
+        background: {
+            color: {
+                value: "transparent"
+            }
+        },
+        fpsLimit: 120,
+        fullScreen: {
+            enable: false
+        },
+        particles: {
+            color: {
+                value: "#ffffff"
+            },
+            links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.3,
+                width: 1
+            },
+            collisions: {
+                enable: false
+            },
+            move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                    default: "bounce"
+                },
+                random: false,
+                speed: 2,
+                straight: false
+            },
+            number: {
+                density: {
+                    enable: true,
+                    area: 800
+                },
+                value: 60
+            },
+            opacity: {
+                value: 0.4
+            },
+            shape: {
+                type: "circle"
+            },
+            size: {
+                value: { min: 1, max: 3 }
+            }
+        },
+        interactivity: {
+            events: {
+                onHover: {
+                    enable: true,
+                    mode: "repulse"
+                },
+                onClick: {
+                    enable: true,
+                    mode: "push"
+                }
+            },
+            modes: {
+                repulse: {
+                    distance: 100,
+                    duration: 0.4
+                },
+                push: {
+                    quantity: 4
+                }
+            }
+        },
+        detectRetina: true
+    });
+});
