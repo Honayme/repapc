@@ -46,20 +46,29 @@
     <meta name="twitter:image" content="https://repapc.weboservice.fr/assets/images/repa-pc-meta.png" />
 
 
-    <!-- ============== RESSOURCES CSS ET JS ============== -->
+    <!-- ============== RESSOURCES CSS ET JS (Optimisé) ============== -->
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap"
-          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap" rel="stylesheet"> <!-- La balise display=swap est déjà bonne -->
+
     <!-- Swiper Slider -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="preload" as="style" href="assets/css/swiper-bundle.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/swiper-bundle.min.css"></noscript>
+
     <!-- AOS Animation CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet" />
+    <link rel="preload" as="style" href="assets/css/aos.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/aos.css"></noscript>
+
     <!-- FancyBox -->
-    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="preload" as="style" href="assets/css/fancybox.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/fancybox.css"></noscript>
+
     <!-- Accordion -->
-    <link rel="stylesheet" href="assets/css/accordion.min.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preload" as="style" href="assets/css/accordion.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/accordion.min.css"></noscript>
+
+    <!-- Style CSS (Contient probablement le CSS critique pour le LCP) -->
+    <link rel="preload" as="style" href="assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 </head>
 
 <body class="overflow-x-hidden">
@@ -269,7 +278,7 @@
                         </div>
                         <a href="#contact" class="btn rounded-md bg-white">Contactez-nous</a>
                     </div>
-                    <div class="lg:col-span-5">
+                    <div class="lg:col-span-5 hidden lg:block">
                         <div
                             class="relative after:content-[''] after:absolute lg:after:-top-0 after:-top-10 after:-right-32 after:w-[36rem] after:h-[36rem] after:border-2 after:border-dashed after:border-slate-300 dark:after:border-slate-700 after:rounded-full after:animate-[spin_120s_linear_infinite] after:-z-1 before:content-[''] before:absolute lg:before:-top-24 before:-top-36 before:-right-56 before:w-[48rem] before:h-[48rem] before:border-2 before:border-dashed before:border-slate-200 dark:before:border-slate-700 before:rounded-full before:animate-[spin_240s_linear_infinite] before:-z-10">
                             <div
@@ -1201,18 +1210,19 @@
 </button>
 
 <!-- TsParticles JS -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<!-- TsParticles JS -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
 <!-- Swiper Slider JS -->
-<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js" defer></script>
 <!-- Counter Js -->
-<script src="assets/js/vanilla-counter.js"></script>
+<script src="assets/js/vanilla-counter.js" defer></script>
 <!-- accordion -->
-<script src="assets/js/accordion.min.js"></script>
+<script src="assets/js/accordion.min.js" defer></script>
 <!-- FancyBox -->
-<script src="assets/js/fancybox.umd.js"></script>
+<script src="assets/js/fancybox.umd.js" defer></script>
 <!-- AOS Animation JS -->
-<script src="assets/js/aos.js"></script>
+<script src="assets/js/aos.js" defer></script>
 <!-- Custom Js -->
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/custom.js" defer></script>
 </body>
 </html>
