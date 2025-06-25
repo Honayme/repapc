@@ -137,7 +137,7 @@
 -->
 <div
     class="flex min-h-screen flex-col bg-white bg-gradient-to-r from-[#FCF1F4] to-[#EDFBF9] font-mulish text-base font-normal text-gray antialiased dark:bg-[#101926] dark:from-transparent dark:to-transparent">
-    <header id="top-header" class="sticky top-0 z-50 bg-black/10 transition duration-300">
+    <header id="top-header" class="sticky top-0 z-50 bg-black/10 transition duration-300 over">
         <div class="container">
             <div class="relative flex items-center justify-between py-5 lg:py-0">
                 <a href="index.html">
@@ -155,7 +155,7 @@
                 </a>
                 <div class="flex items-center">
                     <div onclick="toggleMenu()" class="overlay fixed inset-0 z-[51] hidden bg-black/60 lg:hidden"></div>
-                    <div class="menus z-[99]">
+                    <div class="menus z-[99] overflow-hidden">
                         <div class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden">
                             <button onclick="toggleMenu()" type="button" class="p-4">
                                 <svg
@@ -247,7 +247,7 @@
     *                    🎯 SECTION HOME                     *
     *************************************************************
     -->
-    <div class="-mt-[82px] flex-grow overflow-x-hidden lg:-mt-[106px]">
+    <div class="-mt-[82px] flex-grow overflow-hidden lg:-mt-[106px]">
         <section id="home" class="bg-[url(../images/consulting/banner-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[82px] text-white lg:pt-[106px]">
 
             <!-- Container pour les particules -->
