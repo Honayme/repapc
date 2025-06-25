@@ -141,19 +141,21 @@
         <div class="container">
             <div class="relative flex items-center justify-between py-5 lg:py-0">
                 <a href="index.html">
-                    <!-- Logo par défaut (noir) : visible par défaut, caché au scroll -->
+                    <!-- Le logo sera h-10 par défaut (mobile ET tablette), et h-20 sur les écrans larges (lg) et plus. -->
+
+                    <!-- Logo par défaut (noir) -->
                     <img src="assets/images/logo-sans-lettrage.png"
                          alt="logo"
-                         class="h-20 max-md:h-10 block scrolled:hidden" />
+                         class="h-10 lg:h-20 block scrolled:hidden" />
 
-                    <!-- Logo light (blanc) : caché par défaut, visible au scroll -->
+                    <!-- Logo light (blanc) -->
                     <img src="assets/images/logo-light-sans-lettrage.png"
                          alt="logo"
-                         class="h-20 max-md:h-10 hidden scrolled:block" />
+                         class="h-10 lg:h-20 hidden scrolled:block" />
                 </a>
                 <div class="flex items-center">
                     <div onclick="toggleMenu()" class="overlay fixed inset-0 z-[51] hidden bg-black/60 lg:hidden"></div>
-                    <div class="menus">
+                    <div class="menus z-[99]">
                         <div class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden">
                             <button onclick="toggleMenu()" type="button" class="p-4">
                                 <svg
@@ -169,11 +171,11 @@
                             </button>
                         </div>
                         <ul>
-                            <li><a href="#home">Accueil</a></li>
-                            <li><a href="#quality">Qualité</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#tarifs">Tarifs</a></li>
-                            <li><a href="#engagement">Notre Engagement</a></li>
+                            <li><a href="#home" onclick="toggleMenu()">Accueil</a></li>
+                            <li><a href="#quality" onclick="toggleMenu()">Qualité</a></li>
+                            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                            <li><a href="#tarifs" onclick="toggleMenu()">Tarifs</a></li>
+                            <li><a href="#engagement" onclick="toggleMenu()">Notre Engagement</a></li>
 
                             <!-- La fonctionnalité de recherche est conservée telle quelle -->
                             <li
