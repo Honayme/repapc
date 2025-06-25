@@ -168,9 +168,7 @@
 
                             <!-- La fonctionnalité de recherche est conservée telle quelle -->
                             <li
-                                class="relative hidden items-center before:absolute before:top-1/2 before:h-[30px] before:w-[2px] before:-translate-y-1/2 before:bg-gray/30 ltr:pl-9 ltr:before:-left-[2px] rtl:pr-9 rtl:before:-right-[2px] lg:inline-flex"
-                            >
-
+                                class="relative hidden items-center before:absolute before:top-1/2 before:h-[30px] before:w-[2px] before:-translate-y-1/2 before:bg-gray/30 ltr:pl-9 ltr:before:-left-[2px] rtl:pr-9 rtl:before:-right-[2px] lg:inline-flex">
                             </li>
                         </ul>
                     </div>
@@ -247,10 +245,10 @@
 
             <div class="container">
                 <div class="flex flex-col gap-7 pt-6 md:flex-row md:gap-0">
-                    <div class="space-y-5 pt-24 pb-10 text-center ltr:md:text-left rtl:md:text-right">
+                    <div class="relative z-10 space-y-5 pt-24 pb-10 text-center ltr:md:text-left rtl:md:text-right">
                         <h5 class="text-xl font-bold">Spécialiste en</h5>
                         <h2 class="text-4xl font-black uppercase sm:text-6xl sm:leading-tight">
-                            Réparation de <span class="text-secondary">PC </span>
+                            <span class="text-secondary">Répa</span>ration de <span class="text-secondary">PC </span>
                         </h2>
                         <p class="text-lg font-semibold">
                             Donnez une nouvelle vie à votre ordinateur avec nos services d'optimisation, maintenance
@@ -269,7 +267,7 @@
                                 <img src="assets/images/consulting/banner-icon3.svg" alt="" />
                             </a>
                         </div>
-                        <a href="mailto:thomas.mirabile@gmail.fr" class="btn rounded-md bg-white">Contactez-nous</a>
+                        <a href="#contact" class="btn rounded-md bg-white">Contactez-nous</a>
                     </div>
                     <div class="lg:col-span-5">
                         <div
@@ -352,24 +350,24 @@
                         <div class="grid grid-cols-3 gap-3 sm:gap-5 lg:grid-cols-1">
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
-            <span>
-                <img src="assets/images/consulting/about-icon1.svg" class="mx-auto" alt="" />
-            </span>
+                                <span>
+                                    <img src="assets/images/consulting/about-icon1.svg" class="mx-auto" alt="" />
+                                </span>
                                 <p class="text-b mt-2 font-semibold text-black dark:text-white sm:text-xl">
                                     Expertise</p>
                             </div>
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
-            <span>
-                <img src="assets/images/consulting/about-icon2.svg" class="mx-auto" alt="" />
-            </span>
+                                <span>
+                                    <img src="assets/images/consulting/about-icon2.svg" class="mx-auto" alt="" />
+                                </span>
                                 <p class="mt-2 font-semibold text-black dark:text-white sm:text-xl">Rapidité</p>
                             </div>
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
-            <span>
-                <img src="assets/images/consulting/about-icon3.svg" class="mx-auto" alt="" />
-            </span>
+                                <span>
+                                    <img src="assets/images/consulting/about-icon3.svg" class="mx-auto" alt="" />
+                                </span>
                                 <p class="mt-2 font-semibold text-black dark:text-white sm:text-xl">
                                     Confiance</p>
                             </div>
@@ -397,10 +395,12 @@
                                 vos appareils avec un service personnalisé et des solutions durables adaptées à
                                 vos besoins.
                             </p>
-                            <button type="button"
-                                    class="btn rounded-md text-white shadow-[10px_15px_30px_rgba(119,128,161,0.2)]">
-                                Me contacter
-                            </button>
+                            <a href="#contact">
+                                <button type="button"
+                                        class="btn rounded-md text-white shadow-[10px_15px_30px_rgba(119,128,161,0.2)]">
+                                    Nous contacter
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -419,7 +419,7 @@
             </div>
             <div class="container relative z-[1]">
                 <div class="heading text-center text-white">
-                    <h4 class="mb-2 !font-black uppercase !text-white">Mes <span
+                    <h4 class="mb-2 !font-black uppercase !text-white">Nos <span
                         class="text-secondary">services</span></h4>
                 </div>
 
@@ -513,7 +513,7 @@
         <section id="tarifs" class="overflow-hidden py-12 lg:py-24">
             <div class="container">
                 <div class="heading mb-8 text-center lg:mb-12">
-                    <h4 class="!font-black uppercase">Mes <span class="text-primary">Prix</span></h4>
+                    <h4 class="!font-black uppercase">Nos <span class="text-primary">Prix</span></h4>
                     <p class="mt-2 !text-lg !font-medium"></p>
                 </div>
 
@@ -537,10 +537,12 @@
                             <li>Désactivation des programmes et services inutiles</li>
                             <li>Optimisation des paramètres système</li>
                         </ul>
-                        <button type="button"
-                                class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
-                            Profitez de l'offre
-                        </button>
+                        <a href="#contact">
+                            <button type="button"
+                                    class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
+                                Profitez de l'offre
+                            </button>
+                        </a>
                     </div>
 
                     <!-- Tarification horaire standard -->
@@ -565,10 +567,12 @@
                             <li>Suppression de virus et malwares</li>
                             <li>Installation de logiciels</li>
                         </ul>
-                        <button type="button"
-                                class="mt-auto w-full rounded-md bg-secondary py-4 uppercase text-white duration-200 hover:bg-primary">
-                            Prendre rendez-vous
-                        </button>
+                        <a href="#contact">
+                            <button type="button"
+                                    class="mt-auto w-full rounded-md bg-secondary py-4 uppercase text-white duration-200 hover:bg-primary">
+                                Prendre rendez-vous
+                            </button>
+                        </a>
                     </div>
 
                     <!-- Service de diagnostic gratuit -->
@@ -586,16 +590,17 @@
                             :</p>
                         <ul class="mt-2.5 mb-5 space-y-2.5">
                             <li>Analyse complète du système</li>
-                            <li>Rapport détaillé des problèmes détectés</li>
+                            <li>Rapport détaillé des problèmes qui sont détectés</li>
                             <li>Recommandations pour les réparations nécessaires</li>
                         </ul>
-                        <button type="button"
-                                class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
-                            Obtenir un diagnostic
-                        </button>
+                        <a href="#contact">
+                            <button type="button"
+                                    class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
+                                Obtenir un diagnostic
+                            </button>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -610,7 +615,7 @@
                 <div class="heading text-center">
                     <h4 class="!font-black uppercase">Questions <span class="text-secondary">Fréquentes</span></h4>
                     <h6 class="mx-auto mt-2 max-w-[520px] !font-medium !text-gray">
-                        Retrouvez les réponses aux questions les plus courantes concernant mes services de réparation
+                        Retrouvez les réponses aux questions les plus courantes concernant nos services de réparation
                         informatique
                     </h6>
                 </div>
@@ -797,7 +802,7 @@
                         </ul>
                         <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4 lg:justify-start">
                             <a
-                                href="contact-us.html"
+                                href="#contact"
                                 class="btn rounded-md bg-secondary text-white shadow-[10px_15px_30px_rgba(199,128,161,0.2)] hover:bg-primary transition-all duration-300"
                             >Contactez-nous</a>
                             <a
