@@ -239,3 +239,17 @@ document.addEventListener('DOMContentLoaded', function() {
         detectRetina: true
     });
 });
+
+//Logo nav
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('top-header');
+    const scrollThreshold = 10; // Seuil de défilement en pixels
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollThreshold) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plurk – Tailwind CSS Multipurpose Landing Templates</title>
     <!-- Favicon -->
-    <link rel="icon" type="icon" href="assets/images/favicon.png" />
+    <link rel="icon" type="icon" href="assets/images/logo-sans-lettrage.png" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap"
           rel="stylesheet" />
@@ -91,7 +91,17 @@
     <header id="top-header" class="sticky top-0 z-50 bg-black/10 transition duration-300">
         <div class="container">
             <div class="relative flex items-center justify-between py-5 lg:py-0">
-                <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="h-20" /></a>
+                <a href="index.html">
+                    <!-- Logo par défaut (noir) : visible par défaut, caché au scroll -->
+                    <img src="assets/images/logo-sans-lettrage.png"
+                         alt="logo"
+                         class="h-20 block scrolled:hidden" />
+
+                    <!-- Logo light (blanc) : caché par défaut, visible au scroll -->
+                    <img src="assets/images/logo-light-sans-lettrage.png"
+                         alt="logo"
+                         class="h-20 hidden scrolled:block" />
+                </a>
                 <div class="flex items-center">
                     <div onclick="toggleMenu()" class="overlay fixed inset-0 z-[51] hidden bg-black/60 lg:hidden"></div>
                     <div class="menus">
@@ -970,7 +980,7 @@
 
                 <!-- Logo + Contact rapide (remplace les réseaux sociaux) -->
                 <div class="relative">
-                    <img src="assets/images/logo.png" alt="Réparation PC" class="h-7" />
+                    <img src="assets/images/logo-sans-lettrage.png" alt="Réparation PC" class="" />
 
                     <!-- Remplace les réseaux par info contact -->
                     <div class="mt-8 space-y-3">

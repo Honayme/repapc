@@ -51,5 +51,13 @@ module.exports = {
             }),
         },
     },
-    plugins: [require('@tailwindcss/line-clamp'), rotateX, require('@tailwindcss/typography')],
+    plugins: [
+        require('@tailwindcss/line-clamp'),
+        rotateX,
+        require('@tailwindcss/typography'),
+
+        plugin(function ({ addVariant }) {
+            addVariant('scrolled', '.scrolled &');
+        }),
+    ],
 };
