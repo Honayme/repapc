@@ -159,7 +159,7 @@
                     <div onclick="toggleMenu()" class="overlay fixed inset-0 z-[51] hidden bg-black/60 lg:hidden"></div>
                     <div class="menus z-[99] overflow-hidden">
                         <div class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden">
-                            <button onclick="toggleMenu()" type="button" class="p-4">
+                            <button onclick="toggleMenu()" type="button" aria-label="action button" class="p-4">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -188,7 +188,7 @@
                     <ul class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pr-5 rtl:lg:pl-0">
                         <li>
                             <button
-                                type="button"
+                                type="button" aria-label="action button"
                                 class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-dark text-white hover:text-primary"
                                 onclick="toggleTheme()"
                             >
@@ -219,7 +219,7 @@
                             </button>
                         </li>
                     </ul>
-                    <button type="button"
+                    <button type="button" aria-label="action button"
                             class="flex h-10 w-10 items-center justify-center rounded-full bg-primary lg:hidden"
                             onclick="toggleMenu()">
                         <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +416,7 @@
                             </p>
                             <br/>
                             <a href="#contact">
-                                <button type="button"
+                                <button type="button" aria-label="action button"
                                         class="btn rounded-md text-white shadow-[10px_15px_30px_rgba(119,128,161,0.2)]">
                                     Nous contacter
                                 </button>
@@ -563,7 +563,7 @@
                             <li>Optimisation des paramètres système</li>
                         </ul>
                         <a href="#contact">
-                            <button type="button"
+                            <button type="button" aria-label="action button"
                                     class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
                                 Profiter de l'offre
                             </button>
@@ -593,7 +593,7 @@
                             <li>Installation de logiciels</li>
                         </ul>
                         <a href="#contact">
-                            <button type="button"
+                            <button type="button" aria-label="action button"
                                     class="mt-auto w-full rounded-md bg-secondary py-4 uppercase text-white duration-200 hover:bg-primary">
                                 Prendre rendez-vous
                             </button>
@@ -619,7 +619,7 @@
                             <li>Recommandations pour les réparations nécessaires</li>
                         </ul>
                         <a href="#contact">
-                            <button type="button"
+                            <button type="button" aria-label="action button"
                                     class="mt-auto w-full rounded-md bg-gray py-4 uppercase text-white duration-200 hover:bg-primary">
                                 Obtenir un diagnostic
                             </button>
@@ -652,7 +652,7 @@
                         <div class="ac mt-5 border-none bg-transparent">
                             <h2 class="ac-header rounded-t-md">
                                 <button
-                                    type="button"
+                                    type="button" aria-label="action button"
                                     class="ac-trigger relative !flex w-full items-center justify-between gap-2 !bg-gray/30 !px-5 !font-mulish !text-lg !font-bold !text-black after:!hidden ltr:text-left rtl:text-right dark:!text-white sm:!text-xl"
                                 >
                                     <div>Quels types de réparations proposez-vous ?</div>
@@ -685,7 +685,7 @@
                         <div class="ac mt-5 border-none bg-transparent">
                             <h2 class="ac-header rounded-t-md">
                                 <button
-                                    type="button"
+                                    type="button" aria-label="action button"
                                     class="ac-trigger relative !flex w-full items-center justify-between gap-2 !bg-gray/30 !px-5 !font-mulish !text-lg !font-bold !text-black after:!hidden ltr:text-left rtl:text-right dark:!text-white sm:!text-xl"
                                 >
                                     <div>Comment se déroule le diagnostic gratuit ?</div>
@@ -718,7 +718,7 @@
                         <div class="ac mt-5 border-none bg-transparent">
                             <h2 class="ac-header rounded-t-md">
                                 <button
-                                    type="button"
+                                    type="button" aria-label="action button"
                                     class="ac-trigger relative !flex w-full items-center justify-between gap-2 !bg-gray/30 !px-5 !font-mulish !text-lg !font-bold !text-black after:!hidden ltr:text-left rtl:text-right dark:!text-white sm:!text-xl"
                                 >
                                     <div>Réinstallez-vous Windows sans perdre mes données ?</div>
@@ -750,7 +750,7 @@
                         <div class="ac mt-5 border-none bg-transparent">
                             <h2 class="ac-header rounded-t-md">
                                 <button
-                                    type="button"
+                                    type="button" aria-label="action button"
                                     class="ac-trigger relative !flex w-full items-center justify-between gap-2 !bg-gray/30 !px-5 !font-mulish !text-lg !font-bold !text-black after:!hidden ltr:text-left rtl:text-right dark:!text-white sm:!text-xl"
                                 >
                                     <div>Pourquoi mon PC est-il lent et comment l'optimiser ?</div>
@@ -1213,7 +1213,7 @@
 </div>
 
 <!-- Return to Top -->
-<button type="button" id="scrollToTopBtn" class="fixed bottom-5 z-10 hidden animate-bounce ltr:right-5 rtl:left-5"
+<button type="button" aria-label="action button" id="scrollToTopBtn" class="fixed bottom-5 z-10 hidden animate-bounce ltr:right-5 rtl:left-5"
         onclick="scrollToTop()">
     <div
         class="group flex h-14 w-14 items-center justify-center rounded-full border border-black/20 bg-black text-white transition duration-500 hover:bg-secondary dark:bg-primary dark:hover:bg-secondary"
