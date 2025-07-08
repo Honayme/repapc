@@ -140,7 +140,7 @@
     <header id="top-header" class="sticky top-0 z-50 bg-black/10 transition duration-300 over">
         <div class="container">
             <div class="relative flex items-center justify-between py-5 lg:py-0">
-                <a href="index.html">
+                <a href="index.html" aria-label="Go the the home page">
                     <!-- Le logo sera h-10 par défaut (mobile ET tablette), et h-20 sur les écrans larges (lg) et plus. -->
 
                     <!-- Logo par défaut (noir) -->
@@ -173,11 +173,21 @@
                             </button>
                         </div>
                         <ul class="overflow-hidden">
-                            <li><a href="#home" onclick="toggleMenu()">Accueil</a></li>
-                            <li><a href="#quality" onclick="toggleMenu()">Qualité</a></li>
-                            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-                            <li><a href="#tarifs" onclick="toggleMenu()">Prix</a></li>
-                            <li><a href="#engagement" onclick="toggleMenu()">Notre Engagement</a></li>
+                            <li>
+                                <a href="#home" onclick="toggleMenu()" aria-label="Retourner à l'accueil">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="#quality" onclick="toggleMenu()" aria-label="En savoir plus sur la qualité">Qualité</a>
+                            </li>
+                            <li>
+                                <a href="#services" onclick="toggleMenu()" aria-label="Découvrir nos services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#tarifs" onclick="toggleMenu()" aria-label="Voir les prix">Prix</a>
+                            </li>
+                            <li>
+                                <a href="#engagement" onclick="toggleMenu()" aria-label="Lire notre engagement">Notre Engagement</a>
+                            </li>
 
                             <!-- La fonctionnalité de recherche est conservée telle quelle -->
                             <li
@@ -286,7 +296,7 @@
                                 <img loading="lazy" src="assets/images/consulting/banner-icon3.svg" alt="" width="25" height="35"/>
                             </a>
                         </div>
-                        <a href="#contact" class="btn rounded-md bg-white">Contactez-nous</a>
+                        <a href="#contact" aria-label="nous contacter" class="btn rounded-md bg-white">Contactez-nous</a>
                     </div>
                     <div class="lg:col-span-5 hidden lg:block">
                         <div
@@ -323,33 +333,52 @@
             <div class="swiper industry-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/suppressionvirus.svg" alt=""
-                                                   class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Suppression de virus">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/suppressionvirus.svg" alt="Icône de suppression de virus"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
 
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/changement-disque-dur.svg"
-                                                   alt="" class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Changement de disque dur">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/changement-disque-dur.svg" alt="Icône de changement de disque dur"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/entretien-preventif.svg" alt=""
-                                                   class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Entretien préventif">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/entretien-preventif.svg" alt="Icône d'entretien préventif"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/formation-numerique.svg" alt=""
-                                                   class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Formation numérique">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/formation-numerique.svg" alt="Icône de formation numérique"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/recuperation-de-donnees.svg"
-                                                   alt="" class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Récupération de données">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/recuperation-de-donnees.svg" alt="Icône de récupération de données"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/installation-systeme.svg"
-                                                   alt="" class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Installation de système">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/installation-systeme.svg" alt="Icône d'installation de système"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="javascript:"><img loading="lazy" src="assets/images/repapc/picto-slide/ordinateur-portable.svg" alt=""
-                                                   class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" /></a>
+                        <a href="#" aria-label="Ordinateur portable">
+                            <img loading="lazy" src="assets/images/repapc/picto-slide/ordinateur-portable.svg" alt="Icône d'ordinateur portable"
+                                 class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -965,13 +994,14 @@
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                class="grayscale hover:grayscale-0 transition-all duration-100">
+                                class="grayscale hover:grayscale-0 transition-all duration-100"
+                                title="Carte d'Aix-en-Provence, France">
                             </iframe>
                         </div>
 
                         <!-- CTA de contact -->
                         <div class="mb-10 grid gap-[30px] md:grid-cols-2 lg:grid-cols-3">
-                            <a href="tel:+330609702991" class="group block rounded-[32px] bg-white px-4 py-6 dark:bg-gray-dark md:p-7 transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:scale-110 active:scale-105 cursor-pointer" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="tel:+330609702991" aria-label="cta contact" class="group block rounded-[32px] bg-white px-4 py-6 dark:bg-gray-dark md:p-7 transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:scale-110 active:scale-105 cursor-pointer" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="mb-4 flex items-center gap-2 text-secondary group-hover:text-white transition-colors duration-300">
                                     <div class="transition-transform duration-300 group-hover:scale-110">
                                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1088,21 +1118,24 @@
                 <!-- Services de réparation -->
                 <div>
                     <ul class="flex flex-col gap-3 font-bold">
-                        <li class="mb-3 text-lg font-extrabold text-black dark:text-white">
-                            <i class="fas fa-tools mr-2 text-secondary"></i>Nos Services
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Diagnostic PC">Diagnostic PC</a>
                         </li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Diagnostic
-                            PC</a></li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Réparation
-                            matériel</a></li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Installation
-                            Windows</a></li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Nettoyage
-                            virus</a></li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Récupération
-                            données</a></li>
-                        <li><a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary">Maintenance
-                            préventive</a></li>
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Réparation matériel">Réparation matériel</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Installation Windows">Installation Windows</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Nettoyage virus">Nettoyage virus</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Récupération données">Récupération données</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Maintenance préventive">Maintenance préventive</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -1112,12 +1145,15 @@
                         <li class="mb-3 text-lg font-extrabold text-black dark:text-white">
                             <i class="fas fa-laptop mr-2 text-secondary"></i>Appareils
                         </li>
-                        <li><a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary">PC
-                            de bureau</a></li>
-                        <li><a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary">Ordinateurs
-                            portables</a></li>
-                        <li><a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary">PC
-                            Gaming</a></li>
+                        <li>
+                            <a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : PC de bureau">PC de bureau</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : Ordinateurs portables">Ordinateurs portables</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block transition hover:scale-110 hover:text-secondary" aria-label="Accéder au service : PC Gaming">PC Gaming</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -1172,12 +1208,14 @@
                         <!-- Contact -->
                         <li class="pt-2 space-y-2">
                             <a href="tel:+33609702991"
-                               class="flex items-center gap-2 transition hover:scale-105 hover:text-secondary">
+                               class="flex items-center gap-2 transition hover:scale-105 hover:text-secondary"
+                               aria-label="Appeler le numéro : +33 6 09 70 29 91">
                                 <i class="fas fa-phone text-xs"></i>
                                 <span>+33 6 09 70 29 91</span>
                             </a>
                             <a href="mailto:repapc@weboservice.fr"
-                               class="flex items-center gap-2 transition hover:scale-105 hover:text-secondary text-sm">
+                               class="flex items-center gap-2 transition hover:scale-105 hover:text-secondary text-sm"
+                               aria-label="Envoyer un e-mail à repapc@weboservice.fr">
                                 <i class="fas fa-envelope text-xs"></i>
                                 <span>repapc@weboservice.fr</span>
                             </a>
@@ -1194,13 +1232,14 @@
                     class="flex flex-col items-center justify-between text-center font-bold dark:text-white md:flex-row">
                     <div>
                         Copyright© <span class="curr-year">2024</span>
-                        <a href="#" class="text-primary transition hover:text-secondary">RepaPc</a>
+                        <a href="#" class="text-primary transition hover:text-secondary" aria-label="Visitez RepaPc">RepaPc</a>
                         - Réparation PC & Informatique
                     </div>
                     <div class="flex items-center gap-4 mt-2 md:mt-0">
                         <span class="text-sm">Un problème ?</span>
                         <a href="tel:+33609702991"
-                           class="bg-secondary text-white px-4 py-2 rounded-full text-sm transition hover:bg-primary">
+                           class="bg-secondary text-white px-4 py-2 rounded-full text-sm transition hover:bg-primary"
+                           aria-label="Appeler RepaPc au 06 09 70 29 91">
                             <i class="fas fa-phone mr-1"></i>
                             Appelez-nous !
                         </a>
