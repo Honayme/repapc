@@ -1,9 +1,8 @@
 // Imports des modules
-// import { Swiper, Navigation, Autoplay } from 'swiper';
 import { Swiper } from 'swiper';
 import { Navigation, Autoplay } from 'swiper/modules';
 import AOS from 'aos';
-import { tsParticles } from 'tsparticles-engine';
+
 import Accordion from 'accordion-js';
 import { CountUp } from 'countup.js';
 
@@ -279,86 +278,6 @@ const initIndustrySlider = () => {
 };
 
 
-// Particles
-const initParticles = () => {
-    const particlesContainer = document.getElementById('tsparticles');
-    if (particlesContainer) {
-        tsParticles.load("tsparticles", {
-            background: {
-                color: {
-                    value: "transparent"
-                }
-            },
-            fpsLimit: 120,
-            fullScreen: {
-                enable: false
-            },
-            particles: {
-                color: {
-                    value: "#ffffff"
-                },
-                links: {
-                    color: "#ffffff",
-                    distance: 150,
-                    enable: true,
-                    opacity: 0.3,
-                    width: 1
-                },
-                collisions: {
-                    enable: false
-                },
-                move: {
-                    direction: "none",
-                    enable: true,
-                    outModes: {
-                        default: "bounce"
-                    },
-                    random: false,
-                    speed: 2,
-                    straight: false
-                },
-                number: {
-                    density: {
-                        enable: true,
-                        area: 800
-                    },
-                    value: 60
-                },
-                opacity: {
-                    value: 0.4
-                },
-                shape: {
-                    type: "circle"
-                },
-                size: {
-                    value: { min: 1, max: 3 }
-                }
-            },
-            interactivity: {
-                events: {
-                    onHover: {
-                        enable: true,
-                        mode: "repulse"
-                    },
-                    onClick: {
-                        enable: true,
-                        mode: "push"
-                    }
-                },
-                modes: {
-                    repulse: {
-                        distance: 100,
-                        duration: 0.4
-                    },
-                    push: {
-                        quantity: 4
-                    }
-                }
-            },
-            detectRetina: true
-        });
-    }
-};
 
 // Logo nav scroll effect
 const initLogoNavEffect = () => {
@@ -378,15 +297,101 @@ const initLogoNavEffect = () => {
     }
 };
 
-// Initialisation après chargement du DOM
+
+const initParticles = async () => {
+    const particlesContainer = document.getElementById('tsparticles');
+    if (particlesContainer) {
+        await window.loadBasic(window.tsParticles);
+
+        await window.tsParticles.load({
+            id: "tsparticles",
+            options: {
+                background: {
+                    color: {
+                        value: "transparent"
+                    }
+                },
+                fpsLimit: 120,
+                fullScreen: {
+                    enable: false
+                },
+                particles: {
+                    color: {
+                        value: "#ffffff"
+                    },
+                    links: {
+                        color: "#ffffff",
+                        distance: 150,
+                        enable: true,
+                        opacity: 0.3,
+                        width: 1
+                    },
+                    collisions: {
+                        enable: false
+                    },
+                    move: {
+                        direction: "none",
+                        enable: true,
+                        outModes: {
+                            default: "bounce"
+                        },
+                        random: false,
+                        speed: 2,
+                        straight: false
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 800
+                        },
+                        value: 60
+                    },
+                    opacity: {
+                        value: 0.4
+                    },
+                    shape: {
+                        type: "circle"
+                    },
+                    size: {
+                        value: { min: 1, max: 3 }
+                    }
+                },
+                interactivity: {
+                    events: {
+                        onHover: {
+                            enable: true,
+                            mode: "repulse"
+                        },
+                        onClick: {
+                            enable: true,
+                            mode: "push"
+                        }
+                    },
+                    modes: {
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4
+                        },
+                        push: {
+                            quantity: 4
+                        }
+                    }
+                },
+                detectRetina: true
+            }
+        });
+    }
+};
+
+
+// Initialisation au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialiser tous les composants
     VanillaCounter();
     initAccordion();
     initTestimonialSlider();
     initPartnerSlider();
-    initIndustrySlider(); // ← AJOUTER cette ligne
-    initParticles();
+    initIndustrySlider();
+    initParticles().catch(console.error);
     initLogoNavEffect();
 });
 

@@ -8,8 +8,8 @@ import { Swiper } from 'swiper'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import { Fancybox } from '@fancyapps/ui'
 import AOS from 'aos'
-import { tsParticles } from 'tsparticles-engine'
-import { loadFull } from 'tsparticles'
+import { tsParticles } from '@tsparticles/engine'
+import { loadBasic } from '@tsparticles/basic'
 import { CountUp } from 'countup.js'
 
 // Import CSS des bibliothèques
@@ -29,7 +29,7 @@ window.Swiper = Swiper
 window.Fancybox = Fancybox
 window.AOS = AOS
 window.tsParticles = tsParticles
-window.loadFull = loadFull
+window.loadBasic = loadBasic
 window.CountUp = CountUp
 
 // Initialisation d'AOS
