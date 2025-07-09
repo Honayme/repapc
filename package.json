@@ -1,16 +1,28 @@
 {
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
     "devDependencies": {
         "@tailwindcss/line-clamp": "^0.4.2",
         "@tailwindcss/typography": "^0.5.8",
+        "@vitejs/plugin-legacy": "^7.0.0",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.6",
         "prettier": "^2.8.0",
         "prettier-plugin-tailwindcss": "^0.1.13",
-        "tailwindcss": "^3.1.8"
-    },
-    "scripts": {
-        "dev": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/style.css --watch",
-        "build": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/style.css --minify"
+        "tailwindcss": "^3.1.8",
+        "vite": "^7.0.3"
     },
     "dependencies": {
-        "aos": "^2.3.4"
+        "@fancyapps/ui": "^6.0.9",
+        "accordion-js": "^3.4.1",
+        "aos": "^2.3.4",
+        "countup.js": "^2.9.0",
+        "swiper": "^11.2.10",
+        "tsparticles": "^3.8.1",
+        "tsparticles-engine": "^2.12.0",
+        "vanilla-counter": "^1.0.3"
     }
 }

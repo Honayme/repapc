@@ -23,8 +23,8 @@
     <link rel="canonical" href="https://repapc.weboservice.fr/" />
 
     <!-- Favicons (icônes du site pour navigateur, favoris, etc.) -->
-    <link rel="icon" type="image/png" href="assets/images/logo-sans-lettrage.png" />
-    <link rel="apple-touch-icon" href="assets/images/logo-sans-lettrage.png" />
+    <link rel="icon" type="image/png" href="./src/assets/images/logo-sans-lettrage.png" />
+    <link rel="apple-touch-icon" href="./src/assets/images/logo-sans-lettrage.png" />
 
 
     <!-- ============== PARTAGE SUR LES RÉSEAUX SOCIAUX (Open Graph & Twitter) ============== -->
@@ -34,7 +34,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://repapc.weboservice.fr/" />
 
-    <meta property="og:image" content="https://repapc.weboservice.fr/assets/images/repa-pc-meta.png" />
+    <meta property="og:image" content="https://repapc.weboservice.fr/src/assets/images/repa-pc-meta.png" />
     <meta property="og:site_name" content="RépaPC" />
     <meta property="og:locale" content="fr_FR" />
 
@@ -43,32 +43,14 @@
     <meta name="twitter:title" content="RépaPC | Réparation & Optimisation de PC à Aix-en-Provence" />
     <meta name="twitter:description" content="Spécialiste du dépannage de PC fixes, portables et gaming sur Aix-en-Provence." />
 
-    <meta name="twitter:image" content="https://repapc.weboservice.fr/assets/images/repa-pc-meta.png" />
+    <meta name="twitter:image" content="https://repapc.weboservice.fr/src/assets/images/repa-pc-meta.png" />
 
 
     <!-- ============== RESSOURCES CSS ET JS (Optimisé) ============== -->
     <!-- Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap" rel="stylesheet"> <!-- La balise display=swap est déjà bonne -->
 
-    <!-- Swiper Slider -->
-    <link rel="preload" as="style" href="assets/css/swiper-bundle.min.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/swiper-bundle.min.css"></noscript>
-
-    <!-- AOS Animation CSS -->
-    <link rel="preload" as="style" href="assets/css/aos.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/aos.css"></noscript>
-
-    <!-- FancyBox -->
-    <link rel="preload" as="style" href="assets/css/fancybox.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/fancybox.css"></noscript>
-
-    <!-- Accordion -->
-    <link rel="preload" as="style" href="assets/css/accordion.min.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/accordion.min.css"></noscript>
-
-    <!-- Style CSS (Contient probablement le CSS critique pour le LCP) -->
-    <link rel="preload" as="style" href="assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+    <link rel="stylesheet" href="./src/css/tailwind.css">
 </head>
 
 <body class="overflow-x-hidden">
@@ -144,13 +126,13 @@
                     <!-- Le logo sera h-10 par défaut (mobile ET tablette), et h-20 sur les écrans larges (lg) et plus. -->
 
                     <!-- Logo par défaut (noir) -->
-                    <img loading="lazy" src="assets/images/logo-sans-lettrage.png"
+                    <img loading="lazy" src="./src/assets/images/logo-sans-lettrage.png"
                          alt="logo"
                          class="h-10 lg:h-20 block scrolled:hidden"
                     />
 
                     <!-- Logo light (blanc) -->
-                    <img loading="lazy" src="assets/images/logo-light-sans-lettrage.png"
+                    <img loading="lazy" src="./src/assets/images/logo-light-sans-lettrage.png"
                          alt="logo"
                          class="h-10 lg:h-20 hidden scrolled:block"
                     />
@@ -262,7 +244,7 @@
     <div class="-mt-[82px] flex-grow overflow-hidden lg:-mt-[106px]">
         <section id="home" class="relative pt-[82px] lg:pt-[106px] text-white">
             <img loading="lazy"
-                src="assets/images/consulting01/banner-bg.webp"
+                src="./src/assets/images/consulting01/banner-bg.webp"
                 alt="Bannière"
                 width="1920"
                 height="828"
@@ -286,14 +268,14 @@
                         <div class="flex items-center justify-center gap-5 md:justify-start">
                             <div
                                 class="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-primary/50 duration-200 hover:bg-black">
-                                <img loading="lazy" src="assets/images/consulting/banner-icon1.svg" alt="" width="30" height="30"/>
+                                <img loading="lazy" src="./src/assets/images/consulting/banner-icon1.svg" alt="" width="30" height="30"/>
                             </div>
                             <div
                                 class="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-primary/50 duration-200 hover:bg-black">
-                                <img loading="lazy" src="assets/images/consulting/banner-icon2.svg" alt="" width="30" height="33"/>
+                                <img loading="lazy" src="./src/assets/images/consulting/banner-icon2.svg" alt="" width="30" height="33"/>
                             </div>
                             <a class="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-primary/50 duration-200 hover:bg-black">
-                                <img loading="lazy" src="assets/images/consulting/banner-icon3.svg" alt="" width="25" height="35"/>
+                                <img loading="lazy" src="./src/assets/images/consulting/banner-icon3.svg" alt="" width="25" height="35"/>
                             </a>
                         </div>
                         <a href="#contact" class="btn rounded-md bg-white">Contactez-nous</a>
@@ -334,49 +316,49 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" aria-label="Suppression de virus">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/suppressionvirus.svg" alt="Icône de suppression de virus"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/suppressionvirus.svg" alt="Icône de suppression de virus"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Changement de disque dur">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/changement-disque-dur.svg" alt="Icône de changement de disque dur"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/changement-disque-dur.svg" alt="Icône de changement de disque dur"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Entretien préventif">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/entretien-preventif.svg" alt="Icône d'entretien préventif"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/entretien-preventif.svg" alt="Icône d'entretien préventif"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Formation numérique">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/formation-numerique.svg" alt="Icône de formation numérique"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/formation-numerique.svg" alt="Icône de formation numérique"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Récupération de données">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/recuperation-de-donnees.svg" alt="Icône de récupération de données"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/recuperation-de-donnees.svg" alt="Icône de récupération de données"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Installation de système">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/installation-systeme.svg" alt="Icône d'installation de système"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/installation-systeme.svg" alt="Icône d'installation de système"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="#" aria-label="Ordinateur portable">
-                            <img loading="lazy" src="assets/images/repapc/picto-slide/ordinateur-portable.svg" alt="Icône d'ordinateur portable"
+                            <img loading="lazy" src="./src/assets/images/repapc/picto-slide/ordinateur-portable.svg" alt="Icône d'ordinateur portable"
                                  class="mx-auto transition hover:scale-110 w-64 h-64" width="160" height="40" />
                         </a>
                     </div>
@@ -399,7 +381,7 @@
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
                                 <span>
-                                    <img loading="lazy" src="assets/images/consulting/about-icon1.svg" class="mx-auto" alt="" width="60" height="60"/>
+                                    <img loading="lazy" src="./src/assets/images/consulting/about-icon1.svg" class="mx-auto" alt="" width="60" height="60"/>
                                 </span>
                                 <p class="text-b mt-2 font-semibold text-black dark:text-white sm:text-xl">
                                     Expertise</p>
@@ -407,14 +389,14 @@
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
                                 <span>
-                                    <img loading="lazy" src="assets/images/consulting/about-icon2.svg" class="mx-auto" alt="" width="61" height="60"/>
+                                    <img loading="lazy" src="./src/assets/images/consulting/about-icon2.svg" class="mx-auto" alt="" width="61" height="60"/>
                                 </span>
                                 <p class="mt-2 font-semibold text-black dark:text-white sm:text-xl">Rapidité</p>
                             </div>
                             <div
                                 class="rounded-[10px] bg-white py-4 px-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:bg-white/10 sm:py-[19px]">
                                 <span>
-                                    <img loading="lazy" src="assets/images/consulting/about-icon3.svg" class="mx-auto" alt="" width="60" height="60"/>
+                                    <img loading="lazy" src="./src/assets/images/consulting/about-icon3.svg" class="mx-auto" alt="" width="60" height="60"/>
                                 </span>
                                 <p class="mt-2 font-semibold text-black dark:text-white sm:text-xl">
                                     Confiance</p>
@@ -429,7 +411,7 @@
                                 class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur-xl opacity-70"></div>
                             <div
                                 class="relative bg-white dark:bg-gray-800 rounded-xl p-3 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                                <img loading="lazy" src="assets/images/repapc/reparation-pc.webp" class="mx-auto rounded-xl"
+                                <img loading="lazy" src="./src/assets/images/repapc/reparation-pc.webp" class="mx-auto rounded-xl"
                                      alt="réparation pc Aix en Provence" width="503" height="573" />
                             </div>
                         </div>
@@ -464,7 +446,7 @@
         -->
         <section id="services" class="relative bg-black py-12 dark:bg-white/5 lg:py-24">
             <div class="absolute bottom-0 ltr:right-0 rtl:left-0">
-                <img loading="lazy" src="assets/images/consulting/bg-icon.svg" class="rtl:rotate-y-180" alt="" width="1129" height="376"/>
+                <img loading="lazy" src="./src/assets/images/consulting/bg-icon.svg" class="rtl:rotate-y-180" alt="" width="1129" height="376"/>
             </div>
             <div class="container relative z-[1]">
                 <div class="heading text-center text-white">
@@ -479,7 +461,7 @@
                     <div class="group">
                         <div class="overflow-hidden">
                             <img loading="lazy"
-                                src="assets/images/consulting01/repa-pc-maintenance-logicielle.webp"
+                                src="./src/assets/images/consulting01/repa-pc-maintenance-logicielle.webp"
                                 class="w-full duration-200 group-hover:rotate-2 group-hover:scale-110"
                                 alt="Optimisation et Maintenance Logicielle"
                                 width="1380"
@@ -497,7 +479,7 @@
                                 maintenance logicielle.
                             </p>
                             <span class="absolute bottom-0 opacity-20 ltr:right-0 rtl:left-0">
-                            <img loading="lazy" src="assets/images/consulting/services-icon1.svg" alt="Optimisation Icon" width="99" height="77"/>
+                            <img loading="lazy" src="./src/assets/images/consulting/services-icon1.svg" alt="Optimisation Icon" width="99" height="77"/>
                         </span>
                         </div>
                     </div>
@@ -506,7 +488,7 @@
                     <div class="group">
                         <div class="overflow-hidden">
                             <img loading="lazy"
-                                src="assets/images/consulting01/repa-pc-interventions-materielles.webp"
+                                src="./src/assets/images/consulting01/repa-pc-interventions-materielles.webp"
                                 class="w-full duration-200 group-hover:rotate-2 group-hover:scale-110"
                                 alt="Interventions Matérielles Légères"
                                 width="1380"
@@ -524,7 +506,7 @@
                                 équipement coûteux.
                             </p>
                             <span class="absolute bottom-0 opacity-20 ltr:right-0 rtl:left-0">
-                            <img loading="lazy" src="assets/images/consulting/services-icon2.svg" alt="Interventions Icon" width="102" height="57" />
+                            <img loading="lazy" src="./src/assets/images/consulting/services-icon2.svg" alt="Interventions Icon" width="102" height="57" />
                         </span>
                         </div>
                     </div>
@@ -533,7 +515,7 @@
                     <div class="group">
                         <div class="overflow-hidden">
                             <img loading="lazy"
-                                src="assets/images/consulting01/services3.webp"
+                                src="./src/assets/images/consulting01/services3.webp"
                                 class="w-full duration-200 group-hover:rotate-2 group-hover:scale-110"
                                 alt="Services Informatiques Avancés"
                                 width="1380" height="920"
@@ -550,7 +532,7 @@
                                 complexes.
                             </p>
                             <span class="absolute bottom-0 opacity-20 ltr:right-0 rtl:left-0">
-                            <img loading="lazy" src="assets/images/consulting/services-icon3.svg" alt="Services Avancés Icon" width="73" height="81" />
+                            <img loading="lazy" src="./src/assets/images/consulting/services-icon3.svg" alt="Services Avancés Icon" width="73" height="81" />
                         </span>
                         </div>
                     </div>
@@ -675,7 +657,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-5 sm:gap-10 lg:flex-row">
                     <div class="w-full max-w-[552px] flex-none">
-                        <img loading="lazy" src="assets/images/consulting01/question-img.webp" class="rtl:rotate-y-180" alt="" width="552" height="485"/>
+                        <img loading="lazy" src="./src/assets/images/consulting01/question-img.webp" class="rtl:rotate-y-180" alt="" width="552" height="485"/>
                     </div>
                     <div class="accordion-container flex-1">
                         <div class="ac mt-5 border-none bg-transparent">
@@ -819,7 +801,7 @@
         <section id="engagement" class="relative bg-black py-12 lg:py-24">
             <!-- Image en arrière-plan -->
             <img loading="lazy"
-                src="assets/images/consulting01/business-img.webp"
+                src="./src/assets/images/consulting01/business-img.webp"
                 alt="Image de fond représentant une discussion d'affaires"
                 width="1920"
                 height="456"
@@ -970,7 +952,7 @@
                         </p>
 
                         <img loading="lazy"
-                            src="assets/images/form-light-img.svg"
+                            src="./src/assets/images/form-light-img.svg"
                             alt="form-img"
                             class="mx-auto block dark:hidden"
                             data-aos="fade-right"
@@ -979,7 +961,7 @@
                             height="278"
                         />
                         <img loading="lazy"
-                            src="assets/images/form-dark-img.svg"
+                            src="./src/assets/images/form-dark-img.svg"
                             alt="form-img"
                             class="mx-auto hidden dark:block"
                             data-aos="fade-right"
@@ -1099,7 +1081,7 @@
 
                 <!-- Logo + Contact rapide (remplace les réseaux sociaux) -->
                 <div class="relative">
-                    <img loading="lazy" src="assets/images/logo-sans-lettrage.png" alt="Réparation PC" class="" width="130" height="130"/>
+                    <img loading="lazy" src="./src/assets/images/logo-sans-lettrage.png" alt="Réparation PC" class="" width="130" height="130"/>
 
                     <!-- Remplace les réseaux par info contact -->
                     <div class="mt-8 space-y-3">
@@ -1118,9 +1100,9 @@
                         <p class="text-xs text-gray-500">Réponse sous 2h garantie</p>
                     </div>
 
-                    <img loading="lazy" src="assets/images/consulting01/footer-shape.webp" alt="footer-shape"
+                    <img loading="lazy" src="./src/assets/images/consulting01/footer-shape.webp" alt="footer-shape"
                          class="absolute bottom-0 right-0 sm:left-0" width="150" height="111" />
-                    <img loading="lazy" src="assets/images/consulting01/footer-shape-dark.webp" alt="footer-shape-dark"
+                    <img loading="lazy" src="./src/assets/images/consulting01/footer-shape-dark.webp" alt="footer-shape-dark"
                          class="absolute bottom-0 right-0 hidden dark:block sm:left-0" width="150" height="112" />
                 </div>
 
@@ -1280,30 +1262,18 @@
 </button>
 
 
-<!-- TsParticles JS -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
-<!-- Swiper Slider JS -->
-<script src="assets/js/swiper-bundle.min.js" defer></script>
-<!-- Counter Js -->
-<script src="assets/js/vanilla-counter.js" defer></script>
-<!-- accordion -->
-<script src="assets/js/accordion.min.js" defer></script>
-<!-- FancyBox -->
-<script src="assets/js/fancybox.umd.js" defer></script>
-<!-- AOS Animation JS -->
-<script src="assets/js/aos.js" defer></script>
-<!-- Custom Js -->
-<script src="assets/js/custom.js" defer></script>
+
 
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNNTTCDCCG"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNNTTCDCCG"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-RNNTTCDCCG');
-</script>
+</script>-->
+<script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
