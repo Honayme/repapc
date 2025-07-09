@@ -201,7 +201,7 @@ const initTestimonialSlider = () => {
             spaceBetween: 30,
             speed: 1000,
             autoplay: {
-                delay: 3000,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -221,7 +221,7 @@ const initPartnerSlider = () => {
             loop: true,
             speed: 1000,
             autoplay: {
-                delay: 3000,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             breakpoints: {
@@ -233,6 +233,45 @@ const initPartnerSlider = () => {
                 },
                 1024: {
                     slidesPerView: 7,
+                },
+            },
+        });
+    }
+};
+
+
+
+const initIndustrySlider = () => {
+    const industrySlider = document.querySelector('.industry-slider');
+    if (industrySlider) {
+        const swiper = new Swiper('.industry-slider', {
+            modules: [Autoplay],
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
                 },
             },
         });
@@ -346,6 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initAccordion();
     initTestimonialSlider();
     initPartnerSlider();
+    initIndustrySlider(); // ← AJOUTER cette ligne
     initParticles();
     initLogoNavEffect();
 });
