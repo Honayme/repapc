@@ -19,6 +19,8 @@
         "@fancyapps/ui": "^6.0.9",
         "@tsparticles/basic": "^3.8.1",
         "@tsparticles/engine": "^3.8.1",
+        "@tsparticles/preset-links": "^3.2.0",
+        "@tsparticles/preset-triangles": "^3.2.0",
         "accordion-js": "^3.4.1",
         "aos": "^2.3.4",
         "swiper": "^11.2.10",

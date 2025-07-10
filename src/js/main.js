@@ -10,6 +10,8 @@ import { Fancybox } from '@fancyapps/ui'
 import AOS from 'aos'
 import { tsParticles } from '@tsparticles/engine'
 import { loadBasic } from '@tsparticles/basic'
+import { loadLinksPreset } from "@tsparticles/preset-links";
+import { loadTrianglesPreset } from "@tsparticles/preset-triangles";
 
 
 // Import CSS des bibliothèques
@@ -31,6 +33,8 @@ window.Fancybox = Fancybox
 window.AOS = AOS
 window.tsParticles = tsParticles
 window.loadBasic = loadBasic
+window.loadLinksPreset = loadLinksPreset
+window.loadTrianglesPreset = loadTrianglesPreset
 
 
 // Initialisation d'AOS
