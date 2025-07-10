@@ -318,78 +318,80 @@ const initParticles = async () => {
         await window.tsParticles.load({
             id: "tsparticles",
             options: {
-                background: {
-                    color: {
-                        value: "transparent"
+                "background": {
+                    "color": {
+                        "value": "transparent"
                     }
                 },
-                fpsLimit: 120,
-                fullScreen: {
-                    enable: false
+                "fpsLimit": 120,
+                "fullScreen": {
+                    "enable": false
                 },
-                particles: {
-                    color: {
-                        value: "#ffffff"
+                "particles": {
+                    "color": {
+                        "value": "#ffffff"
                     },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.3,
-                        width: 1
+                    "links": {
+                        "color": "#ffffff",
+                        "distance": 150,
+                        "enable": true,
+                        "opacity": 0.5,
+                        "width": 1
                     },
-                    collisions: {
-                        enable: false
+                    "collisions": {
+                        "enable": true
                     },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce"
+                    "move": {
+                        "direction": "none",
+                        "enable": true,
+                        "outModes": {
+                            "default": "out"
                         },
-                        random: false,
-                        speed: 2,
-                        straight: false
+                        "random": false,
+                        "speed": 2,
+                        "straight": false
                     },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800
+                    "number": {
+                        "density": {
+                            "enable": true,
+                            "area": 800
                         },
-                        value: 60
+                        "value": 80
                     },
-                    opacity: {
-                        value: 0.4
+                    "opacity": {
+                        "value": 0.5
                     },
-                    shape: {
-                        type: "circle"
+                    "shape": {
+                        "type": "circle"
                     },
-                    size: {
-                        value: { min: 1, max: 3 }
+                    "size": {
+                        "value": { "min": 1, "max": 5 }
                     }
                 },
-                interactivity: {
-                    events: {
-                        onHover: {
-                            enable: true,
-                            mode: "repulse"
+                "interactivity": {
+                    "events": {
+                        "onHover": {
+                            "enable": true,
+                            "mode": "grab"
                         },
-                        onClick: {
-                            enable: true,
-                            mode: "push"
+                        "onClick": {
+                            "enable": true,
+                            "mode": "push"
                         }
                     },
-                    modes: {
-                        repulse: {
-                            distance: 100,
-                            duration: 0.4
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "links": {
+                                "opacity": 1
+                            }
                         },
-                        push: {
-                            quantity: 4
+                        "push": {
+                            "quantity": 4
                         }
                     }
                 },
-                detectRetina: true
+                "detectRetina": true
             }
         });
     }
