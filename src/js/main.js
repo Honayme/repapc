@@ -20,6 +20,7 @@ import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import 'aos/dist/aos.css'
+import 'accordion-js/dist/accordion.min.css';
 
 // Configuration Swiper
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade])

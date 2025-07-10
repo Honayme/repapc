@@ -141,45 +141,56 @@ if (ele?.length) {
 
 // Counter Js avec CountUp
 function VanillaCounter() {
-    const counterElements = document.querySelectorAll('.counter');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const element = entry.target;
-                const endValue = parseInt(element.textContent);
-                const countUp = new CountUp(element, endValue, {
-                    duration: 2,
-                    useEasing: true,
-                    useGrouping: true,
-                    separator: ',',
-                });
-
-                if (!countUp.error) {
-                    countUp.start();
-                } else {
-                    console.error(countUp.error);
+    let elements = document.querySelectorAll('[data-vanilla-counter]')
+    elements.forEach(i => {
+        let data = {
+            startAt: parseInt(i.getAttribute('data-start-at')),
+            endAt: parseInt(i.getAttribute('data-end-at')),
+            delay: parseInt(i.getAttribute('data-delay')) || 0,
+            format: '{}',
+            time: parseInt(i.getAttribute('data-time')) || 1000
+        }
+        if (i.getAttribute('data-format')) {
+            data.format = i.getAttribute('data-format')
+        } else if (i.innerHTML != "") {
+            data.format = i.innerHTML
+        }
+        console.log(data.format)
+        if (data.startAt == null) {
+            throw new Error('data-start-at attribute is required')
+        }
+        if (data.endAt == null) {
+            throw new Error('data-end-at attribute is required')
+        }
+        var counter = data.startAt
+        i.innerHTML = data.format.replace('{}', counter)
+        var intervalTime = Math.ceil(data.time / (data.endAt - data.startAt))
+        setTimeout(() => {
+            var interval = setInterval(intervalHandler, intervalTime)
+            function intervalHandler() {
+                counter += (data.endAt - data.startAt) / Math.abs(data.endAt - data.startAt) * 1
+                i.innerHTML = data.format.replace('{}', counter)
+                if (counter == data.endAt) {
+                    clearInterval(interval)
                 }
-
-                observer.unobserve(element);
             }
-        });
-    });
-
-    counterElements.forEach(element => {
-        observer.observe(element);
-    });
+        }, data.delay)
+    })
 }
 
 // Accordion
-// Accordion
+
 const initAccordion = () => {
     const accordionContainer = document.querySelector('.accordion-container');
     if (accordionContainer) {
         const acc = new Accordion('.accordion-container', {
             duration: 400,
             showMultiple: false,
-            onlyChildNodes: true
+            onlyChildNodes: true,
+            // Ajoute ces configurations pour correspondre à tes classes HTML
+            elementClass: 'ac',
+            triggerClass: 'ac-trigger',
+            panelClass: 'ac-panel'
         });
 
         // Optionnel : ouvrir le premier accordéon
@@ -188,6 +199,7 @@ const initAccordion = () => {
         }
     }
 };
+
 
 // Testimonial Slider
 const initTestimonialSlider = () => {
@@ -401,3 +413,4 @@ window.search = search;
 window.scrollToTop = scrollToTop;
 window.toggleTheme = toggleTheme;
 window.toggleDirection = toggleDirection;
+window.VanillaCounter = VanillaCounter
