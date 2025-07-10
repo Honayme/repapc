@@ -4,7 +4,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import AOS from 'aos';
 
 import Accordion from 'accordion-js';
-import { CountUp } from 'countup.js';
+
 
 // Configuration Swiper
 Swiper.use([Navigation, Autoplay]);
@@ -139,7 +139,7 @@ if (ele?.length) {
     }
 }
 
-// Counter Js avec CountUp
+
 function VanillaCounter() {
     let elements = document.querySelectorAll('[data-vanilla-counter]')
     elements.forEach(i => {
